@@ -1,0 +1,182 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.login-logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #131921;
+}
+.login-logo span {
+  color: #f90;
+}
+
+.login-box {
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 26px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(15, 17, 17, 0.15);
+}
+
+.login-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Input and Textarea Styling */
+.login-box input,
+.login-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login-box input:focus,
+.login-box textarea:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+}
+
+.login-box textarea {
+  resize: none; 
+  min-height: 100px; 
+}
+
+.login-btn {
+  width: 100%;
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #e2b33c;
+}
+
+.error-msg {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 8px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.login-info {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #111;
+  line-height: 1.4;
+}
+
+.login-info a {
+  color: #0066c0;
+  text-decoration: none;
+}
+.login-info a:hover {
+  text-decoration: underline;
+}
+
+.new-account {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.new-account p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.new-account button {
+  width: 350px;
+  background: #e7e9ec;
+  border: 1px solid #adb1b8;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.new-account button:hover {
+  background: #d7d9dc;
+}
+
+
+@media (max-width: 768px) {
+  .login-box,
+  .new-account button {
+    width: 90%; 
+    padding: 15px 20px;
+  }
+
+  .login-logo {
+    font-size: 28px;
+  }
+
+  .login-box h3 {
+    font-size: 20px;
+  }
+
+  .login-box input,
+  .login-box textarea,
+  .login-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .new-account p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px 10px;
+  }
+
+  .login-logo {
+    font-size: 24px;
+  }
+
+  .login-box h3 {
+    font-size: 18px;
+  }
+
+  .login-box input,
+  .login-box textarea,
+  .login-btn,
+  .new-account button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .new-account p {
+    font-size: 12px;
+  }
+}
